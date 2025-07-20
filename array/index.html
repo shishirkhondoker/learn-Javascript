@@ -14,7 +14,112 @@
 
 
         let arr= [1,2,3,4,5,6,7,8,9,10];
-         document.write(arr[5]);
+
+        // for (let i=0;i<arr.length;i++)
+        //     {
+        //         document.write(arr[i] + "<br>");
+
+        //     }
+        // for(var item in arr){
+        //     document.write(arr[item] +"<br>");
+        // }
+         
+
+
+        //  myPc = {
+        //     Name:"DELL",
+        //     Size: "21.5",
+        //     Ram: "8GB",
+        //     isComputer: true
+
+        // };
+
+        // for (let item in myPc){
+        //     document.write(myPc[item] + "<br>");
+        // }
+
+        /* Array form*/
+
+        // let name = "Shishir khondoker";
+
+        // let arrayForm = Array.from(name);
+
+        // for(let item in arrayForm){
+        //     document.write(arrayForm[item] + "<br>");
+        // }
+
+
+        /*Array Filter*/
+
+        // let array = [32,20,1,27,90,37,12,45,90];
+
+        // let arrFil = array.filter(function(item){
+        //     return item>30;
+        // })
+
+        // document.write(arrFil + "<br>");
+
+        /* Array find and find index */
+
+        // let a = [32,20,36,5,50];
+
+        // let result1 = a.find(function(value){
+        //     return value>30;
+        // })
+
+        // document.write("<br>Find :"+result1);
+
+        // let result2 = a.findIndex(function(value){
+        //     return value>30;
+        // })
+
+        // document.write("<br>FindIndex :"+result2);
+
+        /*For each*/
+
+        // arr.forEach(function(value){
+        //     document.write(value + "<br>");
+        // })
+
+        /*Array includes and Array Indexof */
+
+        // let res = arr.includes(82);
+        // document.write(res + "<br>");
+        // let res1 = arr.indexOf(8);
+        // document.write(res1);
+
+        /* Array pop push  reverse */
+
+        // document.writeln(arr +"<br>");
+        // arr.push(80);
+        // document.writeln(arr+"<br>");
+        // arr.pop()
+        // document.writeln(arr +"<br>");
+        // arr.reverse();
+        // document.writeln(arr +"<br>");
+
+        /* Array slice and sort */
+
+        let ar = [10, 5, 1, 2, 5, 1];
+        ar.sort(function(a, b) {
+          return a - b;
+         });
+        document.writeln(ar + "<br>");
+
+
+        let r = ar.slice(0,3);
+        document.writeln(r + "<br>");
+
+        let r1 = ar.splice(1,1);
+
+        document.writeln(r1 + "<br>");
+
+        document.writeln(ar + "<br>");
+
+        let r2 = ar.splice(0,0,7);
+
+        document.writeln(ar + "<br>");
+
 
     </script>
     
