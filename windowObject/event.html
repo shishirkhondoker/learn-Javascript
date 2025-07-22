@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myEvent('load complete')">
+    
+
+    <button onclick="myEvent('clicked')">click</button>
+    <button onmouseover="myEvent('mouse over')">mouse over</button>
+    <button onmouseout="myEvent('mouse out')">mouse out</button>
+    <br>
+    <br>
+    <h1>on change</h1>
+    <input type="text" onchange="myEvent('on change')"><br>
+    <h1>key down</h1><br>
+    <input type="text" onkeydown="myEvent('key down')">
+    <br>
+    <h1>key up</h1>
+    <input type="text" name="" id="" onkeyup="myEvent('key up')">
+    
+
+    <script>
+
+
+        function myEvent(msg){
+            console.log(msg)
+        }
+
+      
+
+
+    </script>
+</body>
+</html>
