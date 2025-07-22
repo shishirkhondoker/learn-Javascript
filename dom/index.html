@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="myId"></h1>
+
+    <h1 class="myClass"></h1>
+    <h2 class="myClass"></h2>
+    <h3 class="myClass"></h3>
+    <h4 class="myClass"></h4>
+
+    <p></p>
+    <p></p>
+
+    <script>
+        var myId=document.getElementById('myId');
+        myId.innerHTML="Hello dom";
+
+        var myClass= document.getElementsByClassName('myClass');
+
+        for(let i =0;i<myClass.length;i++)
+    {
+        myClass[i].innerHTML="Hello my class";
+    }
+
+    var myp = document.getElementsByTagName('p');
+    myp[0].innerHTML = "hello p";
+        
+
+
+    </script>
+</body>
+</html>
