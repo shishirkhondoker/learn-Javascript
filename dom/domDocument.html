@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p></p>
+    <h1>1</h1>
+    <h1>2</h1>
+    <h1>3</h1>
+    <button onclick="Demo()">click</button>
+    <button onclick="Demo1()">click</button>
+    <button onclick="Demo3()">New Window</button>
+    <button onclick="Demo4()">Item count</button>
+
+    <script>
+        function Demo(){
+            var info = document.URL;
+            document.getElementsByTagName('p')[0].innerHTML=info;
+
+        }
+
+        function Demo1(){
+            document.open('text/html', 'replace');
+            document.write("<h1>Shishir Khondoker</h1>");
+            document.close();
+
+        }
+
+        function Demo3(){
+            let w = window.open();
+            w.document.open();
+            w.document.write("<h1>Hello new window</h1>");
+            w.document.close();
+
+        }
+
+        function demo4(){
+            let MyItem = document.getElementsByTagName('h1');
+            let ItemCount = MyItem.length;
+            alert(ItemCount);
+        }
+    </script>
+</body>
+</html>
