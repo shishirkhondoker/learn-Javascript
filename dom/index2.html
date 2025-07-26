@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="myH1">ON</h1>
+    <button onclick="toggleText()">Toggle text</button>
+
+
+    <script>
+        function toggleText(){
+           let myH1= document.getElementById('myH1');
+        if (myH1.textContent === 'ON')
+         {
+            myH1.textContent = 'OFF';
+         } 
+        else 
+        {
+            myH1.textContent = 'ON';
+            
+        }
+
+        }
+    </script>
+</body>
+</html>
